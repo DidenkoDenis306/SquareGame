@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+.game {
+  width: 600px;
+  height: 600px;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+}
+
+.btn {
+  margin-left: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.squares {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.square {
+  box-sizing: border-box;
+  border: 1px black solid;
+  background-color: #fff;
+  color: transparent;
+  transition: background-color 0.3s ease-out;
+}
+
+.active_square {
+  background-color: rgb(68, 174, 255);
+}
+
+.info-title {
+  display: block;
+  height: 50px;
+  font-size: 48px;
+}
+
+.selected-squares-info {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 8px;
+  background-color: rgb(242, 219, 176, 0.5);
+  color: rgb(123, 101, 61);
+  font-weight: 600; 
+}
+
+.alerts {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  gap: 40px;
+  transition: all 0.3s;
+}
